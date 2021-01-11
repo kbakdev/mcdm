@@ -5,6 +5,6 @@ Obecnie obsługiwane metody są następujące:
 * Multi-Objective Optimization poprzez analizę współczynników (MOORA) i „Full Multiplicative Form” (Multi-MOORA).
 * Technika kolejności preferencji według podobieństwa do rozwiązania idealnego (TOPSIS) Metoda z liniową transformacją maksimum jako procedurą normalizacyjną.
 * Technika kolejności preferencji według podobieństwa do idealnego rozwiązania (TOPSIS) Metoda z procedurą normalizacji wektorów.
-* VIKOR method.
+* Metoda VIKOR.
 * Metoda ważonej sumy sumarycznej (WASPAS).
 * Meta Ranking rankingów uzyskanych z metod MMOORA, TOPSIS, VIKOR i WASPAS. Proponowane są dwa rankingi meta, czyli suma rankingów i rankingi zagregowane.
