@@ -35,7 +35,7 @@ ui <- tagList(
       id = "app-content",
       navbarPage(
         "Multiple Criteria Decision Making",
-        theme = shinytheme("slate"),
+        theme = shinytheme("yeti"),
         tabPanel(
           "Dane",
           icon = icon("database"),
