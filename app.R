@@ -208,7 +208,7 @@ server <- function(input, output, session) {
   
   rawdata <- eventReactive(input$use, {
     if (input$source == "example") {
-      read_csv("./data/student-mat.csv")
+      read_csv("./data/spolki-zywnosciowe.csv")
     } else if (input$source == "upload") {
       read_csv(input$upload_data$datapath)
     }
