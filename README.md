@@ -21,5 +21,5 @@ Dane zostały tutaj pobrane z dokumentu Pana Witczaka. Na ich podstawie można p
 - Rotację aktywów
 - Zadłużenie
 
-## zbior_danych_prosty.csv, zbior_danych.csv, test.csv
+## zbior_danych_prosty.csv / zbior_danych.csv / test.csv
 Te pliki służą jako podstawowe pliki "Comma Separated Value", które można wgrać do programu i testować na nich jak zachowa się algorytm.
