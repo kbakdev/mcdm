@@ -240,19 +240,7 @@ server <- function(input, output, session) {
     })
   })
   
-  observeEvent(input$arrange, {
-    showModal(
-      modalDialog(
-        title = strong("Zestaw danych jest ustawiony"),
-        "Proszę spojrzeć na zaaranżowany zbiór danych, czy jest już prawidłowo skonfigurowany?", 
-        br(),
-        "Jeśli tak, przejdź do zakładki „Analiza”! W przeciwnym razie możesz zmienić kolejność zbioru danych.",
-        size = "m",
-        easyClose = TRUE, 
-        fade = TRUE
-      )
-    )
-  })
+
   
   dataset <- eventReactive(input$arrange, {
     cost <- style(
