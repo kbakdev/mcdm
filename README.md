@@ -9,17 +9,24 @@ Obecnie obsługiwane metody są następujące:
 * Metoda ważonej sumy sumarycznej (WASPAS).
 * Meta Ranking rankingów uzyskanych z metod MMOORA, TOPSIS, VIKOR i WASPAS. Proponowane są dwa rankingi meta, czyli suma rankingów i rankingi zagregowane.
 
-## spolki-miesne.csv / spolki-zywnosciowe.csv
-Dane zostały tutaj pobrane z dokumentu Pana Witczaka. Na ich podstawie można przeanalizować:
-- Rentowność operacyjną
-- Rentowność netto
-- ROE
-- ROA
-- Wypłacalność natychmiastową
-- Płynność bieżącą
-- Złotą regułę
-- Rotację aktywów
-- Zadłużenie
+## Główne funkcje z zmiennymi
 
-## zbior_danych_prosty.csv / zbior_danych.csv / test.csv
-Te pliki służą jako podstawowe pliki "Comma Separated Value", które można wgrać do programu i testować na nich jak zachowa się algorytm.
+Funkcja MetaRanking_custom opiera się głównie na parametrach `decision`, `weights`, `cb`, `lambda`, `v`, `AB`, `CD`.
+- MMoora = MMOORA(decision, weights, cb)
+- TopsisV = TOPSISVector(decision, weights, cb)
+- TopsisL = TOPSISLinear(decision, weights, cb)
+- Vikor = VIKOR(decision, weights, cb, v)
+- Waspas = WASPAS(decision, weights, cb, lambda)
+
+## Przykładowe dane
+Dane zostały tutaj pobrane z dokumentu Profesora Witczaka. Na ich podstawie można przeanalizować:
+- Rentowność operacyjną: zysk operacyjny / przychody.
+- Rentowność netto: zysk netto / przychody.
+- ROE (zwrot z kapitału): zysk netto / stan kapitału własnego pod koniec minionego roku obrotowego.
+- ROA (zwrot z aktywów): zysk netto / stan aktywów pod koniec minionego roku obrotowego.
+- Wypłacalność natychmiastową: środki pieniężne / zobowiązania krótkoterminowe.
+- Płynność bieżącą: aktywa obrotowe / zobowiązania krótkoterminowe.
+- Złotą regułę bilansową: kapitał własny / aktywa trwałe (reguła jest wypełniona, gdy wskaźnik ma wartość wyżsżą niż 1 pkt).
+- Rotację aktywów: pomaga określić, w jaki sposób pozycjonować swoje inwestycje, aby wykorzystać wzrost zarówno akcji, jak i obligacji, jednocześnie w dużej mierze unikając tych niefortunnych okresów dużych spadków na rynku.
+- Zadłużenie ogólne: zobowiązania / suma bilansowa.
+Są tam również dodatkowe pliki "Comma Separated Value", które można wgrać do programu i testować na nich jak zachowa się algorytm.
