@@ -311,7 +311,8 @@ server <- function(input, output, session) {
           buttons =
             list(
               list(
-                extend = "Kopiuj"
+                extend = "copy",
+                text = "Kopiuj"
               ),
               list(
                 extend = "collection",
@@ -516,12 +517,13 @@ server <- function(input, output, session) {
           buttons =
             list(
               list(
-                extend = "copy"
+                extend = "copy",
+                text = "Kopiuj"
               ),
               list(
                 extend = "collection",
                 buttons = c("csv", "excel"),
-                text = "Download"
+                text = "Pobierz"
               )
             )
         )
