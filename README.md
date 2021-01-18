@@ -33,3 +33,11 @@ Są tam również dodatkowe pliki "Comma Separated Value", które można wgrać 
 
 ## Jak przygotować zbiór danych?
 Możliwości jest wiele, można zrobić to w dowolnym programie typu **Excel** czy **OpenOffice**, można skorzystać z różnych baz danych i pozmieniać je na własne potrzeby. Serdecznie polecam ![archive.ics.uci.edu](https://archive.ics.uci.edu/ml/index.php), bądź ![kaggle.com](https://www.kaggle.com/). Po tym gdy już się wybierze dane, trzeba zrobić jedną tabelkę z alternatywami, najlepiej numerując każdy wiersz. Plik trzeba zapisać w formacie `.csv` inaczej *Comma Separated Value* i upewnić się, że zmienne oddzielane są przecinkiem. Później można wszystko wgrać do programu i analizować dane, jeśli wszystko się dobrze podało. Trzeba również pamiętać o tym, aby suma ważenia wynosiła 1, w innym przypadku program nie zadziała.
+
+### Wdrożenie metody TOPSIS w przypadku wielokryterialnych problemów decyzyjnych
+Funkcja `TOPSISVector` implementuje Technikę kolejności preferencji według metody podobieństwa idealnego rozwiązania (TOPSIS) z procedurą normalizacji wektorowej.
+Parametr `decision` to macierz decyzyjna `m x n`, z wartościami alternatyw `m` dla kryteriów `n`.
+Parametr `weights` to wektor o długości `n` zawierającej wagi kryteriów. Suma wag musi wynosić 1.
+Parametr `cb` to wektor długości `n`. Każdy składnik to albo `cb(i)=max`, jeśli kryterium `i(x)` to korzyść, albo `cb(i)=min`, jeśli `i(x)` kryterium to koszt.
+`TOPSISVector` zwraca ramkę danych, która zawiera wynik indeksu R i ranking alternatyw.
+Źródła: Hwang, C.L.; Yoon, K. Multiple Attribute Decision Making, Notatki Profesora Witczaka.
