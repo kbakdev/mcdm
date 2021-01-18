@@ -30,3 +30,6 @@ Dane zostały tutaj pobrane z dokumentu Profesora Witczaka. Na ich podstawie mo�
 - Rotację aktywów: pomaga określić, w jaki sposób pozycjonować swoje inwestycje, aby wykorzystać wzrost zarówno akcji, jak i obligacji, jednocześnie w dużej mierze unikając tych niefortunnych okresów dużych spadków na rynku.
 - Zadłużenie ogólne: zobowiązania / suma bilansowa.
 Są tam również dodatkowe pliki "Comma Separated Value", które można wgrać do programu i testować na nich jak zachowa się algorytm.
+
+## Jak przygotować zbiór danych?
+Możliwości jest wiele, można zrobić to w dowolnym programie typu **Excel** czy **OpenOffice**, można skorzystać z różnych baz danych i pozmieniać je na własne potrzeby. Serdecznie polecam !(https://archive.ics.uci.edu/ml/index.php)[archive.ics.uci.edu], bądź !(https://www.kaggle.com/)[kaggle.com]. Po tym gdy już się wybierze dane, trzeba zrobić jedną tabelkę z alternatywami, najlepiej numerując każdy wiersz. Plik trzeba zapisać w formacie `.csv` inaczej *Comma Separated Value* i upewnić się, że zmienne oddzielane są przecinkiem. Później można wszystko wgrać do programu i analizować dane, jeśli wszystko się dobrze podało. Trzeba również pamiętać o tym, aby suma ważenia wynosiła 1, w innym przypadku program nie zadziała.
