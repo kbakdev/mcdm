@@ -1,4 +1,4 @@
-# **MCDM**
+# **Podejmowanie decyzji na podstawie wielu kryteriów**
 Celem tej aplikacji jest podejmowanie decyzji w oparciu o wiele kryteriów (MCDM). Ta aplikacja używa języka R jako „silnika” do obliczeń i analiz. Jest to implementacja pakietu MCDM.
 Obecnie obsługiwane metody są następujące:
 
